@@ -1,56 +1,29 @@
-# Claude Skills — Jan Meeuwissen
+# Claude Skills bibliotheek — ROC Nijmegen
 
-Skills library voor Claude, gehost op GitHub.
+Deze bibliotheek bevat skills voor Claude: instructies die Claude automatisch inzet bij bepaalde taken, zoals het schrijven van bestuursdocumenten in de ROC Nijmegen stijl.
 
-## Structuur
+## Beschikbare skills
 
-```
-claude-skills/
-├── index.json                         # Manifest van alle beschikbare skills
-├── skills/
-│   ├── index/
-│   │   └── SKILL.md                   # Index skill (altijd geladen in Claude)
-│   └── schrijfstijl-beleid/
-│       └── SKILL.md                   # Schrijfstijl voor ROC Nijmegen
-└── .github/
-    └── workflows/
-        └── validate.yml               # Automatische validatie bij elke push
-```
+| Skill | Waarvoor |
+|---|---|
+| `schrijfstijl-beleid` | Beleidsnotities, CvB-voorstellen, besluitteksten en andere bestuursdocumenten |
 
-## Een skill toevoegen
+## Hoe gebruik je een skill?
 
-1. Maak een nieuwe map aan onder `skills/`:
-   ```bash
-   mkdir skills/naam-van-skill
-   ```
+Je hoeft zelf niets te installeren. De skills werken automatisch in Claude als de **index skill** is ingesteld in jouw Claude-project. Vraag Jan Meeuwissen om toegang als dat nog niet het geval is.
 
-2. Maak een `SKILL.md` aan met frontmatter:
-   ```markdown
-   ---
-   name: naam-van-skill
-   description: >
-     Wanneer moet Claude deze skill inzetten?
-   ---
+Zodra de index skill actief is, werkt het zo:
 
-   # Inhoud van de skill
-   ...
-   ```
+1. Open Claude en stel je vraag zoals je normaal zou doen, bijvoorbeeld: *"Schrijf een voorstel aan het CvB over..."*
+2. Claude herkent automatisch dat de schrijfstijl-skill van toepassing is, laadt die in, en past de ROC Nijmegen schrijfstijl toe.
+3. Je hoeft de skill niet zelf aan te roepen.
 
-3. Voeg de skill toe aan `index.json`.
+Wil je weten welke skills er beschikbaar zijn? Vraag het gewoon aan Claude: *"Welke skills heb je beschikbaar?"*
 
-4. Push naar GitHub:
-   ```bash
-   git add .
-   git commit -m "skill: naam-van-skill toegevoegd"
-   git push
-   ```
+## Overzicht van alle skills
 
-De GitHub Action valideert automatisch of alles klopt.
+Het volledige overzicht staat in [`index.json`](./index.json). Dat bestand wordt automatisch bijgewerkt als er nieuwe skills worden toegevoegd.
 
-## Raw URLs
+## Vragen of verbeteringen?
 
-Bestanden zijn direct op te halen via:
-```
-https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/index.json
-https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/NAAM/SKILL.md
-```
+Neem contact op met Jan Meeuwissen, of open een [issue](https://github.com/Jan-Meeuwissen/claude-skills/issues) in deze repository.
