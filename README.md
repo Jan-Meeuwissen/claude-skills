@@ -1,44 +1,133 @@
-# Claude Skills bibliotheek — ROC Nijmegen
+# SD_Testing_Agent
 
-Deze bibliotheek bevat skills voor Claude: instructies die Claude automatisch inzet bij bepaalde taken, zoals het schrijven van bestuursdocumenten in de ROC Nijmegen stijl.
+Een lokaal draaiende AI-chatassistent gericht op softwaretesten, gebouwd op [Ollama](https://ollama.com) en het model `qwen2.5-coder:1.5b-instruct`. De applicatie draait volledig lokaal in Docker — er wordt geen data naar externe servers gestuurd.
 
-## Beschikbare skills
+---
 
-| Skill | Waarvoor |
+## Wat doet de app?
+
+SD_Testing_Agent is een webgebaseerde chatinterface die fungeert als een expert softwaretester. De agent helpt met:
+
+- Het schrijven van testcases en testplannen
+- Het identificeren van edge cases en potentiële foutpunten
+- Het reviewen van code op bugs en kwaliteitsproblemen
+- Het adviseren over teststrategieën (unit, integratie, E2E, regressie, performance)
+- Het schrijven van geautomatiseerde testscripts
+- Het uitleggen van testconcepten
+
+Bij het opstarten vraagt de app om een studentnummer en naam. Deze worden tijdens de sessie permanent weergegeven. De rol en het gedrag van de agent zijn configureerbaar via het bestand `config/role.json`.
+
+---
+
+## Vereisten
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (inclusief Docker Compose)
+- Minimaal 2 GB vrije schijfruimte (voor het Ollama model)
+- Een moderne webbrowser
+
+---
+
+## Installatie
+
+1. Clone of download de projectmap naar je lokale machine.
+
+2. Zorg dat de mapstructuur er als volgt uitziet:
+
+```
+sd-testing-agent/
+├── Dockerfile
+├── .dockerignore
+├── docker-compose.yml
+├── package.json
+├── server.js
+├── config/
+│   └── role.json
+└── public/
+    └── index.html
+```
+
+3. Er is geen verdere installatie nodig — Docker regelt alles automatisch.
+
+---
+
+## Starten
+
+Open een terminal in de projectmap en voer uit:
+
+```bash
+docker-compose up --build
+```
+
+Bij de **eerste start** gebeurt het volgende automatisch:
+- Het Ollama image wordt gedownload
+- Het model `qwen2.5-coder:1.5b-instruct` wordt gedownload (~1 GB, eenmalig)
+- De applicatie wordt gebouwd en gestart
+- De agent start pas zodra het model volledig geladen is
+
+Zodra alles klaar is open je de app in je browser op:
+
+```
+http://localhost:3333
+```
+
+Bij **volgende starts** (model al gedownload) gebruik je:
+
+```bash
+docker-compose up
+```
+
+---
+
+## Stoppen
+
+Stop de applicatie met:
+
+```bash
+docker-compose down
+```
+
+Het gedownloade model blijft bewaard in een Docker volume (`ollama_data`) en hoeft niet opnieuw te worden gedownload bij de volgende start.
+
+---
+
+## Rol aanpassen
+
+Pas het bestand `config/role.json` aan en start de applicatie opnieuw op:
+
+```json
+{
+  "role": "SD_Testing_Agent",
+  "description": "Expert software tester assistant",
+  "primaryTask": "Assist with all aspects of software testing",
+  "responsibilities": [
+    "Write test cases and test plans",
+    "..."
+  ],
+  "behavior": [
+    "Be concise and precise",
+    "..."
+  ]
+}
+```
+
+Start daarna opnieuw op:
+
+```bash
+docker-compose down
+docker-compose up --build
+```
+
+---
+
+## Poorten
+
+| Service | Poort |
 |---|---|
-| `schrijfstijl-beleid` | Beleidsnotities, CvB-voorstellen, besluitteksten en andere bestuursdocumenten |
+| Webinterface | http://localhost:3333 |
+| Ollama API | http://localhost:11434 |
 
-## Eenmalig instellen (eerste keer)
+---
 
-Om de skills te kunnen gebruiken koppel je deze GitHub-repo eenmalig aan je Claude-project:
+## Auteur
 
-1. Open [claude.ai](https://claude.ai) en ga naar je project
-2. Ga naar **Project Knowledge** en klik op **+**
-3. Kies **GitHub**
-4. Plak de repo-URL: `https://github.com/Jan-Meeuwissen/claude-skills`
-5. Kies via **Configure files** het bestand `skills/index/SKILL.md`
-6. Klaar — Claude weet nu waar de rest van de skills te vinden zijn
-
-De index skill bevat de URL van het manifest op GitHub. Claude haalt dat manifest op zodra het nodig is, en laadt daarna automatisch de juiste skill in.
-
-### Skills up-to-date houden
-
-Zijn er nieuwe skills toegevoegd aan de bibliotheek? Klik op het **Sync**-icoon naast de gekoppelde repo in Project Knowledge. Claude heeft dan direct de nieuwste versie.
-
-## Hoe gebruik je een skill?
-
-Zodra de index skill actief is, werkt het zo:
-
-1. Open Claude en stel je vraag zoals je normaal zou doen, bijvoorbeeld: *"Schrijf een voorstel aan het CvB over..."*
-2. Claude herkent automatisch dat de schrijfstijl-skill van toepassing is, laadt die in, en past de ROC Nijmegen schrijfstijl toe.
-3. Je hoeft de skill niet zelf aan te roepen.
-
-Wil je weten welke skills er beschikbaar zijn? Vraag het gewoon aan Claude: *"Welke skills heb je beschikbaar?"*
-
-## Overzicht van alle skills
-
-Het volledige overzicht staat in [`index.json`](./index.json). Dat bestand wordt automatisch bijgewerkt als er nieuwe skills worden toegevoegd.
-
-## Vragen of verbeteringen?
-
-Neem contact op met Jan Meeuwissen, of open een [issue](https://github.com/Jan-Meeuwissen/claude-skills/issues) in deze repository.
+**Jan Meeuwissen — ROC Nijmegen**
