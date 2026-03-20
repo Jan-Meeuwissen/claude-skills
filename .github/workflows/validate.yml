@@ -1,0 +1,64 @@
+name: Validate skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Controleer index.json syntax
+        run: |
+          python3 -c "
+          import json, sys
+          with open('index.json') as f:
+              data = json.load(f)
+          skills = data.get('skills', [])
+          print(f'index.json geldig — {len(skills)} skill(s) gevonden')
+          for s in skills:
+              for field in ['name', 'description', 'url', 'tags']:
+                  if field not in s:
+                      print(f'FOUT: skill \"{s.get(\"name\",\"?\")}\" mist veld \"{field}\"')
+                      sys.exit(1)
+          "
+
+      - name: Controleer of elke skill een SKILL.md heeft
+        run: |
+          python3 -c "
+          import json, os, sys
+          with open('index.json') as f:
+              data = json.load(f)
+          ok = True
+          for s in data['skills']:
+              pad = f\"skills/{s['name']}/SKILL.md\"
+              if os.path.exists(pad):
+                  print(f'OK: {pad}')
+              else:
+                  print(f'FOUT: {pad} niet gevonden')
+                  ok = False
+          sys.exit(0 if ok else 1)
+          "
+
+      - name: Controleer of SKILL.md frontmatter heeft
+        run: |
+          python3 -c "
+          import os, sys
+          ok = True
+          for root, dirs, files in os.walk('skills'):
+              for f in files:
+                  if f == 'SKILL.md':
+                      pad = os.path.join(root, f)
+                      with open(pad) as fh:
+                          inhoud = fh.read()
+                      if not inhoud.startswith('---'):
+                          print(f'FOUT: {pad} mist frontmatter (---)') 
+                          ok = False
+                      else:
+                          print(f'OK: {pad}')
+          sys.exit(0 if ok else 1)
+          "

@@ -1,0 +1,13 @@
+{
+  "version": "1",
+  "updated": "2026-03-20",
+  "base_url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main",
+  "skills": [
+    {
+      "name": "schrijfstijl-beleid",
+      "description": "Schrijfstijl en tone-of-voice voor bestuursdocumenten van ROC Nijmegen. Gebruik deze skill altijd wanneer je teksten schrijft, redigeert of beoordeelt voor ROC Nijmegen: beleidsnotities, voorstellen aan het College van Bestuur (CvB), besluitteksten, regelingen, examenbeleid of interne communicatie vanuit een bestuurlijk kader.",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/schrijfstijl-beleid/SKILL.md",
+      "tags": ["schrijven", "beleid", "CvB", "ROC Nijmegen"]
+    }
+  ]
+}
