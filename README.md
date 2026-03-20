@@ -8,9 +8,24 @@ Deze bibliotheek bevat skills voor Claude: instructies die Claude automatisch in
 |---|---|
 | `schrijfstijl-beleid` | Beleidsnotities, CvB-voorstellen, besluitteksten en andere bestuursdocumenten |
 
-## Hoe gebruik je een skill?
+## Eenmalig instellen (eerste keer)
 
-Je hoeft zelf niets te installeren. De skills werken automatisch in Claude als de **index skill** is ingesteld in jouw Claude-project. Vraag Jan Meeuwissen om toegang als dat nog niet het geval is.
+Om de skills te kunnen gebruiken koppel je deze GitHub-repo eenmalig aan je Claude-project:
+
+1. Open [claude.ai](https://claude.ai) en ga naar je project
+2. Ga naar **Project Knowledge** en klik op **+**
+3. Kies **GitHub**
+4. Plak de repo-URL: `https://github.com/Jan-Meeuwissen/claude-skills`
+5. Kies via **Configure files** het bestand `skills/index/SKILL.md`
+6. Klaar — Claude weet nu waar de rest van de skills te vinden zijn
+
+De index skill bevat de URL van het manifest op GitHub. Claude haalt dat manifest op zodra het nodig is, en laadt daarna automatisch de juiste skill in.
+
+### Skills up-to-date houden
+
+Zijn er nieuwe skills toegevoegd aan de bibliotheek? Klik op het **Sync**-icoon naast de gekoppelde repo in Project Knowledge. Claude heeft dan direct de nieuwste versie.
+
+## Hoe gebruik je een skill?
 
 Zodra de index skill actief is, werkt het zo:
 
