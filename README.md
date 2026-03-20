@@ -21,36 +21,17 @@ Deze bibliotheek bevat skills voor Claude: instructies die Claude automatisch in
 | `maak-toets20mc` | Toetsen van 20 meerkeuzevragen (A/B/C) maken, oplopend in moeilijkheid |
 | `roc-nijmegen-brand-guide` | Huisstijl, kleuren, typografie en tone of voice van ROC Nijmegen |
 
-## Eenmalig instellen (eerste keer)
+## Gebruik
 
-Om de skills te kunnen gebruiken koppel je deze GitHub-repo eenmalig aan je Claude-project:
+Start een nieuwe chat op [claude.ai](https://claude.ai) en stuur dit als eerste bericht:
 
-1. Open [claude.ai](https://claude.ai) en ga naar je project
-2. Ga naar **Project Knowledge** en klik op **+**
-3. Kies **GitHub**
-4. Plak de repo-URL: `https://github.com/Jan-Meeuwissen/claude-skills`
-5. Kies via **Configure files** het bestand `skills/index/SKILL.md`
-6. Klaar — Claude weet nu waar de rest van de skills te vinden zijn
+```
+Fetch https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/index/SKILL.md en volg de instructies daarin.
+```
 
-De index skill bevat de URL van het manifest op GitHub. Claude haalt dat manifest op zodra het nodig is, en laadt daarna automatisch de juiste skill in.
+Claude laadt daarna automatisch de juiste skill in op basis van je vraag.
 
-### Skills up-to-date houden
-
-Zijn er nieuwe skills toegevoegd aan de bibliotheek? Klik op het **Sync**-icoon naast de gekoppelde repo in Project Knowledge. Claude heeft dan direct de nieuwste versie.
-
-## Hoe gebruik je een skill?
-
-Zodra de index skill actief is, werkt het zo:
-
-1. Open Claude en stel je vraag zoals je normaal zou doen, bijvoorbeeld: *"Schrijf een voorstel aan het CvB over..."*
-2. Claude herkent automatisch dat de schrijfstijl-skill van toepassing is, laadt die in, en past de ROC Nijmegen schrijfstijl toe.
-3. Je hoeft de skill niet zelf aan te roepen.
-
-Wil je weten welke skills er beschikbaar zijn? Vraag het gewoon aan Claude: *"Welke skills heb je beschikbaar?"*
-
-## Overzicht van alle skills
-
-Het volledige overzicht staat in [`index.json`](./index.json). Dat bestand wordt automatisch bijgewerkt als er nieuwe skills worden toegevoegd.
+> **Tip:** Gebruik je de skills dagelijks? Maak dan een project aan op claude.ai en plak bovenstaande regel in het **Instructions** veld. Dan hoef je het niet elke keer opnieuw te doen.
 
 ## Vragen of verbeteringen?
 
