@@ -8,6 +8,84 @@
       "description": "Schrijfstijl en tone-of-voice voor bestuursdocumenten van ROC Nijmegen. Gebruik deze skill altijd wanneer je teksten schrijft, redigeert of beoordeelt voor ROC Nijmegen: beleidsnotities, voorstellen aan het College van Bestuur (CvB), besluitteksten, regelingen, examenbeleid of interne communicatie vanuit een bestuurlijk kader.",
       "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/schrijfstijl-beleid/SKILL.md",
       "tags": ["schrijven", "beleid", "CvB", "ROC Nijmegen"]
+    },
+    {
+      "name": "lees-dim",
+      "description": "Gebruik deze skill altijd wanneer er vragen zijn over het DIM (Directe Instructie Model), EDI (Expliciete Directe Instructie), of verwante instructiemodellen zoals ADI, IGDI of GRR. Activeer ook bij vragen over lesontwerp op basis van directe instructie, cognitieve belastingstheorie in de klas, of wanneer een docent wil nadenken over hoe zij een les effectief kunnen structureren.",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/lees-dim/SKILL.md",
+      "tags": ["onderwijs", "instructiemodel", "EDI", "DIM", "lesontwerp"]
+    },
+    {
+      "name": "lees-kd-itmw",
+      "description": "Gebruik deze skill altijd wanneer er verwezen wordt naar het kwalificatiedossier (KD) van ICT support (Medewerker ICT / ITMW), of wanneer vragen gaan over kerntaken, werkprocessen, gedragsindicatoren, competenties of kennis en vaardigheden uit het SBB-dossier ICT support (crebo 25999, niveau 2, versie 2024).",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/lees-kd-itmw/SKILL.md",
+      "tags": ["KD", "kwalificatiedossier", "ITMW", "Medewerker ICT", "niveau 2", "SBB"]
+    },
+    {
+      "name": "lees-kd-itss",
+      "description": "Gebruik deze skill altijd wanneer er verwezen wordt naar het kwalificatiedossier (KD) van ICT support and systems, of wanneer vragen gaan over kerntaken, werkprocessen, gedragsindicatoren, competenties of kennis en vaardigheden uit het SBB-dossier ICT support and systems (crebo 23405, versie 2025).",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/lees-kd-itss/SKILL.md",
+      "tags": ["KD", "kwalificatiedossier", "ITSS", "ICT support and systems", "SBB"]
+    },
+    {
+      "name": "lees-kd-sd",
+      "description": "Gebruik deze skill altijd wanneer er verwezen wordt naar het kwalificatiedossier (KD) van Software Developer, of wanneer vragen gaan over kerntaken, werkprocessen, gedragsindicatoren, competenties of kennis en vaardigheden uit het SBB-dossier Software Developer (crebo 25998, niveau 4, versie 2024).",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/lees-kd-sd/SKILL.md",
+      "tags": ["KD", "kwalificatiedossier", "Software Developer", "niveau 4", "SBB"]
+    },
+    {
+      "name": "lees-rekeneisen",
+      "description": "Expert op de Rekeneisen voor het Middelbaar Beroepsonderwijs (mbo), gepubliceerd door de Expertgroep Herijking Rekeneisen mbo (mei 2020). Gebruik deze skill altijd wanneer de gebruiker rekenopgaven wil bedenken voor mbo-studenten, een context wil toetsen aan de rekeneisen, of vragen stelt over de vijf functionele rekendomeinen.",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/lees-rekeneisen/SKILL.md",
+      "tags": ["rekenen", "mbo", "rekeneisen", "rekenopgaven"]
+    },
+    {
+      "name": "lees-visie",
+      "description": "Gebruik deze skill altijd wanneer er vragen zijn over de onderwijsvisie van het ICT-team Software Developer of ROC Nijmegen. Trigger bij vragen over visie op leren, leeromgeving, begeleidingsfilosofie, talentontwikkeling, leerroutes, inclusief onderwijs, of wanneer onderwijskeuzes verantwoord moeten worden vanuit de teamvisie.",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/lees-visie/SKILL.md",
+      "tags": ["visie", "onderwijs", "ROC Nijmegen", "Software Developer", "leerfilosofie"]
+    },
+    {
+      "name": "lescontext-sd",
+      "description": "Gebruik deze skill altijd wanneer een gebruiker een les, lesplan, lesactiviteit, werkvorm of lesopzet wil maken of bespreken. De skill verzamelt de benodigde lescontext (groepsgrootte en lesduur) voordat verdere stappen worden gezet.",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/lescontext-sd/SKILL.md",
+      "tags": ["les", "lescontext", "Software Developer", "lesvoorbereiding"]
+    },
+    {
+      "name": "maak-lesplan",
+      "description": "Gebruik deze skill altijd wanneer een docent een volledig lesplan wil maken via een begeleide workflow. De skill doorloopt acht stappen: kwalificatiedossier lezen, teamvisie lezen, instructiemodel kiezen, lescontext vastleggen, lesdoelen invoeren, voorkennis bespreken, lesplan genereren en hulpmiddelen maken.",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/maak-lesplan/SKILL.md",
+      "tags": ["lesplan", "lesvoorbereiding", "Software Developer", "onderwijs", "docent"]
+    },
+    {
+      "name": "maak-oefening",
+      "description": "Gebruik deze skill altijd wanneer een docent een oefening, opdracht, taak of werkvorm wil maken voor studenten Software Developer (MBO niveau 4). De skill genereert altijd een scaffolded oefening: stapsgewijs opgebouwd van makkelijk naar moeilijk, met hints, een voorbeeldoplossing en een startpunt.",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/maak-oefening/SKILL.md",
+      "tags": ["oefening", "opdracht", "scaffolding", "Software Developer", "niveau 4"]
+    },
+    {
+      "name": "maak-opdracht",
+      "description": "Gebruik deze skill altijd wanneer een docent een grotere opdracht wil maken die de hele lesstof omvat voor studenten Software Developer (MBO niveau 4). De opdracht omvat de volledige leerstof, bevat altijd een casus en heeft 4 scaffolding-varianten waar de student zelf uit kiest.",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/maak-opdracht/SKILL.md",
+      "tags": ["opdracht", "casus", "scaffolding", "Software Developer", "niveau 4"]
+    },
+    {
+      "name": "maak-presentatie",
+      "description": "Gebruik deze skill altijd wanneer een docent een presentatie wil maken voor een les aan studenten Software Developer (MBO niveau 4). De skill genereert een volledige docentpresentatie met sprekersnotities en visuele suggesties per slide, in ROC Nijmegen huisstijl.",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/maak-presentatie/SKILL.md",
+      "tags": ["presentatie", "slides", "ROC Nijmegen", "Software Developer", "docent"]
+    },
+    {
+      "name": "maak-toets20mc",
+      "description": "Gebruik deze skill altijd wanneer een docent een toets, proefwerk, kennischeck of multiple choice toets wil maken voor studenten Software Developer (MBO niveau 4). De skill genereert altijd een toets van 20 meerkeuzevragen (A/B/C), oplopend in moeilijkheid, met toelichting per vraag.",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/maak-toets20mc/SKILL.md",
+      "tags": ["toets", "multiple choice", "kennischeck", "Software Developer", "niveau 4"]
+    },
+    {
+      "name": "roc-nijmegen-brand-guide",
+      "description": "Brand guide skill voor ROC Nijmegen. Gebruik deze skill altijd wanneer je content, tekst, ontwerp-instructies of communicatiemiddelen maakt voor ROC Nijmegen. Bevat de volledige huisstijl, logo-gebruik, kleuren, typografie, fotografie, tone of voice en ontwerpmethode.",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/roc-nijmegen-brand-guide/SKILL.md",
+      "tags": ["huisstijl", "branding", "ROC Nijmegen", "design", "communicatie"]
     }
   ]
 }
