@@ -7,6 +7,8 @@ Deze bibliotheek bevat skills voor Claude: instructies die Claude automatisch in
 | Skill | Waarvoor |
 |---|---|
 | `schrijfstijl-beleid` | Beleidsnotities, CvB-voorstellen, besluitteksten en andere bestuursdocumenten |
+| `lees-burgerschap` | Kwalificatie-eisen burgerschapsonderwijs mbo, herformuleringen B1/B2, begrippen- en werkwoordenlijst |
+| `burgerschap-ontwerp` | Lessen, lessenseries, opdrachten, toetsing en leerlijnen burgerschapsonderwijs mbo ontwerpen |
 | `lees-dim` | Vragen over het Directe Instructie Model (DIM/EDI) en verwante instructiemodellen |
 | `lees-kd-itmw` | Kwalificatiedossier Medewerker ICT (crebo 25999, niveau 2, versie 2024) |
 | `lees-kd-itss` | Kwalificatiedossier ICT support and systems (crebo 23405, versie 2025) |

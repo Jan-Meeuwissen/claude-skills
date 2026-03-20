@@ -82,6 +82,18 @@
       "tags": ["toets", "multiple choice", "kennischeck", "Software Developer", "niveau 4"]
     },
     {
+      "name": "lees-burgerschap",
+      "description": "Gebruik deze skill altijd wanneer de gebruiker vragen stelt over het adviesrapport 'Burgerschapsonderwijs in een veranderende samenleving' (herijking kwalificatie-eisen burgerschapsonderwijs mbo), of wanneer het gaat over burgerschapsonderwijs in het mbo, de nieuwe kwalificatie-eisen burgerschap, de vier thema's (Verschil en gelijkwaardigheid, Individu en groep, Maatschappijvisies en maatschappelijke vraagstukken, Macht en besluitvorming), examinering van burgerschap, de wettelijke schoolopdracht, of de aanbevelingen van de expertgroep. Gebruik ook wanneer gevraagd wordt om lessen, toetsen, samenvattingen of andere uitwerkingen op basis van dit adviesrapport te maken. Gebruik ook wanneer gevraagd wordt naar de herformulering van de kwalificatie-eisen (Expertisecentrum Nederlands, april 2024), de vereenvoudigde doelzinnen op B1/B2-niveau, of de begrippen- en werkwoordenlijst bij de kwalificatie-eisen.",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/lees-burgerschap/SKILL.md",
+      "tags": ["burgerschap", "kwalificatie-eisen", "mbo", "examinering", "democratie"]
+    },
+    {
+      "name": "burgerschap-ontwerp",
+      "description": "Gebruik deze skill altijd wanneer gevraagd wordt om burgerschapsonderwijs te ontwerpen of uit te werken voor het mbo. Triggers zijn: lessenseries, losse lessen, lesopzetten, lesdoelen, leerlijnen, werkvormen, opdrachten, oefeningen, toetsen, examinering, differentiatie, en alles wat te maken heeft met het praktisch vormgeven van burgerschapsonderwijs op basis van de nieuwe kwalificatie-eisen. Gebruik ook wanneer gevraagd wordt om een les, opdracht of toets te maken voor een specifiek thema (A: Vrijheid & gelijkheid, B: Individu & groep, C: Maatschappijvisies & maatschappelijke vraagstukken, D: Macht & besluitvorming), of voor een specifieke doelgroep (BOL, BBL, LLO, niveau 1–4, volwassenen). Gebruik in combinatie met de lees-burgerschap skill voor inhoudelijke context over de kwalificatie-eisen.",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/burgerschap-ontwerp/SKILL.md",
+      "tags": ["burgerschap", "lesontwerp", "lessenserie", "toetsing", "mbo", "differentiatie"]
+    },
+    {
       "name": "roc-nijmegen-brand-guide",
       "description": "Brand guide skill voor ROC Nijmegen. Gebruik deze skill altijd wanneer je content, tekst, ontwerp-instructies of communicatiemiddelen maakt voor ROC Nijmegen. Bevat de volledige huisstijl, logo-gebruik, kleuren, typografie, fotografie, tone of voice en ontwerpmethode.",
       "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/roc-nijmegen-brand-guide/SKILL.md",
