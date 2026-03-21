@@ -70,6 +70,75 @@ De pay-off "Samen maken we er werk van" wordt bij **voorkeur los** van het logo 
 
 ---
 
+### Sublogo: ROC Nijmegen (witte / transparante variant)
+
+Dit is de **witte versie** van het ROC Nijmegen-logo op transparante achtergrond (`logowit_transp.svg`). Het logo toont:
+- De lettermerken **B**, **O** en **ROC** (groot, wit) in de koptekststijl
+- De horizontale balk in **middeltpaars** (`#6e6eb4`) als scheider
+- De tekst **"nijmegen"** en subwoorden in wit
+
+**Gebruik:**
+- Altijd op een **donkere achtergrond** plaatsen — donkerpaars (`#3f2e56`), een foto of ander donker vlak
+- Nooit op wit of lichte achtergronden (tekst en elementen zijn wit)
+- Vaste verhoudingen bewaren — niet vervormen of roteren
+- Afmetingen: basisformaat 195 × 142,5 px (viewBox: 130 × 95)
+
+**SVG-bronbestand:** `assets/logowit_transp.svg`
+
+```svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="195" height="142.5" viewBox="0 0 130 95" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xml:space="preserve" xmlns:serif="http://www.serif.com/"
+  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+  <g transform="matrix(1.02287,0,0,1.02287,-5.30805e-08,-1.02287)">
+    <path d="M106.634,45.954C96.686,47.526 91.462,44.41 90.159,36.181L87.248,17.772C85.939,9.485 89.946,4.907 99.894,3.335L114.339,1.052C115.818,0.818 116.572,1.367 116.806,2.846L117.939,10.008C118.172,11.487 117.624,12.241 116.144,12.475L104.244,14.355C101.756,14.746 100.782,15.872 101.099,17.886L103.326,31.974C103.634,33.927 104.901,34.638 107.388,34.244L119.287,32.364C120.768,32.131 121.52,32.679 121.756,34.158L122.871,41.202C123.104,42.681 122.556,43.436 121.076,43.669L106.634,45.954Z" style="fill:#FFFFFF;fill-rule:nonzero;"/>
+    <path d="M15.976,35.288L20.416,34.586C22.489,34.258 22.834,32.991 22.582,31.392L22.265,29.379C22.011,27.782 21.291,26.681 19.22,27.009L14.78,27.712L15.976,35.288ZM8.586,61.454C7.106,61.687 6.352,61.139 6.116,59.66L0.052,21.301C-0.182,19.822 0.367,19.068 1.846,18.835L21.56,15.718C30.441,14.314 33.86,17.899 34.786,23.759L35.217,26.482C35.74,29.798 35.287,32.296 32.967,33.755C37.364,33.546 40.701,36.233 41.487,41.205L43.472,53.753C43.705,55.232 43.157,55.986 41.678,56.219L32.5,57.669C31.021,57.903 30.267,57.354 30.033,55.875L28.601,46.82C28.321,45.044 27.607,44.369 25.949,44.632L17.659,45.941L19.494,57.542C19.728,59.021 19.179,59.776 17.7,60.009L8.586,61.454Z" style="fill:#FFFFFF;fill-rule:nonzero;"/>
+    <path d="M87.432,57.092C87.534,57.735 87.09,58.347 86.446,58.448L53.028,63.731C52.385,63.832 51.773,63.389 51.671,62.745L50.289,54.009C50.187,53.366 50.631,52.754 51.275,52.652L84.693,47.37C85.336,47.268 85.946,47.712 86.047,48.355L87.432,57.092Z" style="fill:rgb(110,110,180);fill-rule:nonzero;"/>
+    <path d="M63.961,32.153C60.23,32.742 56.727,30.196 56.138,26.466C55.549,22.735 58.096,19.233 61.825,18.645C65.556,18.056 69.059,20.602 69.647,24.332C70.239,28.063 67.692,31.564 63.961,32.153ZM59.664,4.977C48.381,6.76 40.683,17.349 42.466,28.629C44.249,39.909 54.84,47.606 66.122,45.823C77.405,44.04 85.103,33.451 83.32,22.171C81.537,10.891 70.946,3.192 59.664,4.977Z" style="fill:#FFFFFF;fill-rule:nonzero;"/>
+    <!-- Subwoordmerk (nijmegen / kleine letters) -->
+    <path d="M11.54,92.766L8.86,75.844L10.335,75.611L24.342,88.46L23.568,88.583L21.239,73.885L23.003,73.606L25.683,90.528L24.209,90.762L10.228,77.905L11.003,77.783L13.332,92.481L11.54,92.766Z" style="fill:#FFFFFF;fill-rule:nonzero;"/>
+    <!-- overige letterpaden: zie SVG-bronbestand -->
+  </g>
+</svg>
+```
+
+> **Tip voor Claude:** Gebruik bij het genereren van uitingen in ROC Nijmegen stijl altijd dit bestand als referentie voor de witte logovariant. Voeg het in als `<img src="assets/logowit_transp.svg" alt="ROC Nijmegen logo">` op een donkere achtergrond.
+
+---
+
+### Sublogo: ROC Nijmegen (donkere variant, achtergrond ingebakken)
+
+Dit is de **donkere versie** van het logo (`logodonker.svg`). Identiek aan de witte variant, maar met de donkerpaarse achtergrond (`#3f2e56`) als `<rect>` ingebakken in de SVG zelf.
+
+**Gebruik:**
+- Inzetbaar als **zelfstandig blok** — de achtergrond is onderdeel van het bestand
+- Gebruik deze variant wanneer je het logo als losstaand element wilt plaatsen zonder apart een achtergrondkleur in te stellen (bijv. in e-mail, HTML, social media)
+- Vaste verhoudingen bewaren — niet vervormen
+
+**Verschil met witte variant:**
+
+| | `logowit_transp.svg` | `logodonker.svg` |
+|---|---|---|
+| Achtergrond | Transparant | Donkerpaars `#3f2e56` ingebakken |
+| Gebruik | Op gekleurde/donkere vlakken | Als zelfstandig, op elke achtergrond |
+
+**SVG-bronbestand:** `assets/logodonker.svg`
+
+```svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="195" height="142.5" viewBox="0 0 130 95" version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+  <rect width="130" height="95" fill="#3f2e56" />
+  <!-- Logo-paden identiek aan logowit_transp.svg — zie dat bestand voor volledige broncode -->
+</svg>
+```
+
+> **Tip voor Claude:** Gebruik `assets/logodonker.svg` wanneer het logo als op-zichzelf-staand element wordt ingezet (bijv. `<img src="assets/logodonker.svg">`), zonder dat een donkere achtergrond in de omringende HTML/CSS nodig is.
+
+---
+
 ## Kleuren
 
 Het palet bestaat uit **vijf basiskleuren**. Van elke kleur mogen percentages worden gebruikt in stappen van 20%.
