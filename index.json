@@ -94,6 +94,12 @@
       "tags": ["burgerschap", "lesontwerp", "lessenserie", "toetsing", "mbo", "differentiatie"]
     },
     {
+      "name": "mcq-expert",
+      "description": "Wetenschappelijk onderbouwde MCQ-expert op basis van Haladyna, Downing & Rodriguez (2002) en de AERA/APA/NCME Standards. Gebruik deze skill altijd wanneer iemand MCQ-vragen wil maken op basis van lesstof, bestaande MCQ-vragen wil laten nakijken of verbeteren (Item Writing Flaws), of wil weten op welk Bloom-niveau een vraag zit. Trigger ook bij: 'goede meerkeuzevragen', 'toetsvragen', 'quizvragen', 'kennischeck', 'check deze vraag', 'is dit een goede vraag?' of 'maak vragen over X'. Standaard 3 antwoordopties (A/B/C).",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/mcq-expert/SKILL.md",
+      "tags": ["MCQ", "toetsing", "item writing", "Bloom", "meerkeuzevragen", "kwaliteit"]
+    },
+    {
       "name": "roc-nijmegen-brand-guide",
       "description": "Brand guide skill voor ROC Nijmegen. Gebruik deze skill altijd wanneer je content, tekst, ontwerp-instructies of communicatiemiddelen maakt voor ROC Nijmegen. Bevat de volledige huisstijl, logo-gebruik, kleuren, typografie, fotografie, tone of voice en ontwerpmethode.",
       "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/roc-nijmegen-brand-guide/SKILL.md",

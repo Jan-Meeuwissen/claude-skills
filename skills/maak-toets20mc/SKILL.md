@@ -73,43 +73,49 @@ Wacht op bevestiging van de docent voordat je verdergaat met stap 2.
 
 ## Stap 2: Genereer de toets
 
-### 2a. ROC Nijmegen huisstijl
+### 2a. Vereiste skills laden
 
-Lees de skill `roc-nijmegen-brand-guide` via `/mnt/skills/user/roc-nijmegen-brand-guide/SKILL.md` voordat je de output genereert. Pas de huisstijl toe op kleurgebruik, typografie, logo en schrijfstijl.
+Lees vóór het genereren de volgende twee skills:
 
+1. **`/mnt/skills/user/mcq-expert/SKILL.md`** — voor itemkwaliteit (31 Haladyna-richtlijnen, Bloom-niveaus, IWF-check)
+2. **`/mnt/skills/user/roc-nijmegen-brand-guide/SKILL.md`** — voor kleurgebruik, typografie, logo en schrijfstijl in de HTML-output
 ---
 
 ### 2b. Verdeling van de 20 vragen
 
-Verdeel de vragen oplopend in moeilijkheid:
+Verdeel de vragen oplopend in moeilijkheid. Gebruik de **mcq-expert skill** (`/mnt/skills/user/mcq-expert/SKILL.md`) voor het genereren én bewaken van de kwaliteit van elk item. Lees die skill vóór je begint met schrijven.
 
-| Vragen  | Niveau       | Omschrijving                                                   |
-|---------|--------------|----------------------------------------------------------------|
-| 1 – 7   | Makkelijk    | Reproductie: herkennen, benoemen, definities                   |
-| 8 – 14  | Gemiddeld    | Begrip & toepassing: uitleggen, kiezen in een context          |
-| 15 – 20 | Moeilijk     | Analyse & redeneren: vergelijken, beoordelen, redeneren        |
+Koppeling van toets-niveau aan Bloom (via mcq-expert):
+
+| Vragen  | Niveau       | Bloom-niveaus (mcq-expert)         | Omschrijving                                                |
+|---------|--------------|------------------------------------|-------------------------------------------------------------|
+| 1 – 7   | Makkelijk    | 1 – Onthouden / 2 – Begrijpen      | Reproductie: herkennen, benoemen, definities                |
+| 8 – 14  | Gemiddeld    | 2 – Begrijpen / 3 – Toepassen      | Begrip & toepassing: uitleggen, kiezen in een context       |
+| 15 – 20 | Moeilijk     | 4 – Analyseren / 5 – Evalueren     | Analyse & redeneren: vergelijken, beoordelen, redeneren     |
 
 ---
 
-### 2c. Structuur per vraag
+### 2c. Structuur per vraag — via mcq-expert MAAK-modus
 
-Elke vraag volgt dit formaat:
+Genereer elk item via de **MAAK-modus van mcq-expert**. Pas de volledige set van 31 Haladyna-richtlijnen toe (zie `mcq-expert/references/haladyna-31-guidelines.md`). Gebruik de game- en software-context (zie §Motivatie).
+
+Elke vraag volgt het mcq-expert outputformaat:
 
 ```
-Vraag [nummer] — [moeilijkheidslabel: Makkelijk / Gemiddeld / Moeilijk]
+Vraag [nummer] — [moeilijkheidslabel] · Bloom: [niveau + naam]
 
 [Vraagstelling]
 
 A. [optie]
 B. [optie]
 C. [optie]
+
+✓ Correct: [letter] — [korte uitleg]
+✗ [letter]: [waarom dit een plausibele maar foute keuze is]
+✗ [letter]: [idem]
 ```
 
-Regels voor goede meerkeuzevragen:
-- De vraagstelling is helder en enkelvoudig (één concept per vraag)
-- Alle drie opties zijn plausibel — vermijd duidelijk foute afleiders
-- Het goede antwoord is ondubbelzinnig correct
-- Gebruik een herkenbare software- of game-context waar mogelijk (zie §Motivatie)
+Na het genereren van alle 20 vragen: voer intern een **IWF-check** uit (mcq-expert REVIEW-modus) en herstel eventuele Item Writing Flaws vóórdat de HTML wordt gegenereerd. Meld alleen flaws die niet konden worden opgelost zonder de inhoud te veranderen — de rest los je stil op.
 
 ---
 
@@ -167,3 +173,12 @@ Gebruik altijd een herkenbare context voor de doelgroep:
 - Schrijf de vragen in **jij-vorm** gericht aan de student
 - Gebruik **Nederlands**, tenzij het een Engels codeonderwerp is (dan mag code in het Engels)
 - Houd de toon neutraal en helder: geen dubbele negaties, geen trucvragen
+
+---
+
+## Afhankelijkheden
+
+| Skill | Waarvoor |
+|---|---|
+| `mcq-expert` | Itemkwaliteit: MAAK-modus voor schrijven, REVIEW-modus voor IWF-check, Bloom-niveau per vraag |
+| `roc-nijmegen-brand-guide` | Visuele huisstijl van de HTML-output |
