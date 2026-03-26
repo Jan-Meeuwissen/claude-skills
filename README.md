@@ -21,6 +21,7 @@ Deze bibliotheek bevat skills voor Claude: instructies die Claude automatisch in
 | `maak-opdracht` | Grotere casusopdrachten maken die de volledige lesstof omvatten |
 | `maak-presentatie` | Docentpresentaties maken in ROC Nijmegen huisstijl, met sprekersnotities |
 | `maak-toets20mc` | Toetsen van 20 meerkeuzevragen (A/B/C) maken, oplopend in moeilijkheid |
+| `mcq-expert` | Beoordeeld de kwaliteit van meerkeuzevragen, op wetenschappeijke basis (o.a Haladyna/Bloom) |
 | `roc-nijmegen-brand-guide` | Huisstijl, kleuren, typografie en tone of voice van ROC Nijmegen |
 
 ## Gebruik
