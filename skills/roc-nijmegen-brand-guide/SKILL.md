@@ -107,35 +107,26 @@ Dit is de **witte versie** van het ROC Nijmegen-logo op transparante achtergrond
 
 ---
 
-### Sublogo: ROC Nijmegen (donkere variant, achtergrond ingebakken)
+### Sublogo: ROC Nijmegen (donkerpaars op transparante achtergrond)
 
-Dit is de **donkere versie** van het logo (`logodonker.svg`). Identiek aan de witte variant, maar met de donkerpaarse achtergrond (`#3f2e56`) als `<rect>` ingebakken in de SVG zelf.
+Dit is de **donkerpaarse variant** van het logo op transparante achtergrond (`logo-roc-nijmegen.svg`). Alle logo-elementen en het subwoordmerk "nijmegen" zijn in donkerpaars (`#3f2e56`), de middenbalk in middeltpaars (`#6e6eb4`). Er is geen ingebakken achtergrond.
 
 **Gebruik:**
-- Inzetbaar als **zelfstandig blok** — de achtergrond is onderdeel van het bestand
-- Gebruik deze variant wanneer je het logo als losstaand element wilt plaatsen zonder apart een achtergrondkleur in te stellen (bijv. in e-mail, HTML, social media)
+- Op **witte of lichte achtergronden** — de donkere elementen zijn goed zichtbaar
+- Nooit op donkere achtergronden (gebruik dan `logowit_transp.svg`)
 - Vaste verhoudingen bewaren — niet vervormen
 
 **Verschil met witte variant:**
 
-| | `logowit_transp.svg` | `logodonker.svg` |
+| | `logowit_transp.svg` | `logo-roc-nijmegen.svg` |
 |---|---|---|
-| Achtergrond | Transparant | Donkerpaars `#3f2e56` ingebakken |
-| Gebruik | Op gekleurde/donkere vlakken | Als zelfstandig, op elke achtergrond |
+| Logo-kleur | Wit | Donkerpaars `#3f2e56` |
+| Achtergrond | Transparant | Transparant |
+| Gebruik | Op donkere/gekleurde vlakken | Op witte of lichte achtergronden |
 
-**SVG-bronbestand:** `assets/logodonker.svg`
+**SVG-bronbestand:** `assets/logo-roc-nijmegen.svg`
 
-```svg
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="195" height="142.5" viewBox="0 0 130 95" version="1.1"
-  xmlns="http://www.w3.org/2000/svg"
-  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-  <rect width="130" height="95" fill="#3f2e56" />
-  <!-- Logo-paden identiek aan logowit_transp.svg — zie dat bestand voor volledige broncode -->
-</svg>
-```
-
-> **Tip voor Claude:** Gebruik `assets/logodonker.svg` wanneer het logo als op-zichzelf-staand element wordt ingezet (bijv. `<img src="assets/logodonker.svg">`), zonder dat een donkere achtergrond in de omringende HTML/CSS nodig is.
+> **Tip voor Claude:** Gebruik `assets/logo-roc-nijmegen.svg` wanneer het logo op een witte of lichte achtergrond wordt geplaatst (bijv. `<img src="assets/logo-roc-nijmegen.svg" alt="ROC Nijmegen logo">`).
 
 ---
 
