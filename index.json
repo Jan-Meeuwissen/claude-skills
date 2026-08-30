@@ -104,12 +104,6 @@
       "description": "Brand guide skill voor ROC Nijmegen. Gebruik deze skill altijd wanneer je content, tekst, ontwerp-instructies of communicatiemiddelen maakt voor ROC Nijmegen. Bevat de volledige huisstijl, logo-gebruik, kleuren, typografie, fotografie, tone of voice en ontwerpmethode.",
       "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/roc-nijmegen-brand-guide/SKILL.md",
       "tags": ["huisstijl", "branding", "ROC Nijmegen", "design", "communicatie"]
-    },
-    {
-      "name": "vrijstellingen-verkenner",
-      "description": "Gebruik deze skill altijd wanneer een mbo-student (of iemand namens een student) vraagt of het zin heeft om een vrijstelling aan te vragen bij ROC Nijmegen — voor Nederlands, Engels, rekenen, een keuzedeel, een beroepsgericht onderdeel, burgerschap, LOB of stage/bpv. Gebaseerd op de Vrijstellingsregeling 2026-2027 van ROC Nijmegen (vastgesteld 30 juni 2026, geldig vanaf 1 augustus 2026). Trigger bij: 'vrijstelling aanvragen', 'hoef ik dit examen nog te doen', 'telt mijn diploma mee', of vergelijkbare vragen over het hergebruiken van een eerder behaald resultaat.",
-      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/vrijstellingen-verkenner/SKILL.md",
-      "tags": ["vrijstelling", "examinering", "mbo", "ROC Nijmegen", "studenten"]
     }
   ]
 }
