@@ -1,6 +1,6 @@
 {
   "version": "2",
-  "updated": "2026-03-20",
+  "updated": "2026-09-13",
   "base_url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main",
   "skills": [
     {
@@ -56,6 +56,12 @@
       "description": "Gebruik deze skill altijd wanneer een docent een volledig lesplan wil maken via een begeleide workflow. De skill doorloopt acht stappen: kwalificatiedossier lezen, teamvisie lezen, instructiemodel kiezen, lescontext vastleggen, lesdoelen invoeren, voorkennis bespreken, lesplan genereren en hulpmiddelen maken.",
       "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/maak-lesplan/SKILL.md",
       "tags": ["lesplan", "lesvoorbereiding", "Software Developer", "onderwijs", "docent"]
+    },
+    {
+      "name": "maak-leeruitkomst",
+      "description": "Gebruik deze skill altijd wanneer iemand een leeruitkomst wil opstellen, herformuleren, aanscherpen, beoordelen of vergelijken op basis van een of meer SBB-kwalificatiedossiers. Trigger ook bij: 'schrijf een leeruitkomst voor...', 'herformuleer deze leeruitkomst', 'is deze leeruitkomst Tuning-proof?', 'maak een gedeelde leeruitkomst voor opleiding A en B', 'welke overlap hebben deze kwalificaties?' of 'kunnen deze opleidingen samen een module volgen?'. Werkt volgens de Tuning-formule (werkwoord + type + onderwerp + standaard + context), aangevuld met de SBB-velden complexiteit en verantwoordelijkheid/zelfstandigheid.",
+      "url": "https://raw.githubusercontent.com/Jan-Meeuwissen/claude-skills/main/skills/maak-leeruitkomst/SKILL.md",
+      "tags": ["leeruitkomst", "Tuning", "kwalificatiedossier", "SBB", "overlap", "flexibel onderwijs"]
     },
     {
       "name": "maak-oefening",

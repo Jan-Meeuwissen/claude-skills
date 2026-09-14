@@ -16,6 +16,7 @@ Deze bibliotheek bevat skills voor Claude: instructies die Claude automatisch in
 | `lees-rekeneisen` | Rekeneisen voor het MBO (Expertgroep Herijking Rekeneisen mbo, 2020) |
 | `lees-visie` | Onderwijsvisie van het ICT-team Software Developer en ROC Nijmegen |
 | `lescontext-sd` | Lescontext verzamelen (groepsgrootte, lesduur) voor lesvoorbereiding |
+| `maak-leeruitkomst` | Leeruitkomsten opstellen, herformuleren en vergelijken volgens Tuning en de SBB-kwalificatiedossiers |
 | `maak-lesplan` | Volledig lesplan maken via een begeleide workflow in acht stappen |
 | `maak-oefening` | Scaffolded oefeningen maken voor studenten Software Developer (niveau 4) |
 | `maak-opdracht` | Grotere casusopdrachten maken die de volledige lesstof omvatten |
